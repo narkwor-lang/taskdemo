@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Isabella | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1 class="logo">ISABELLA</h1>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="toggle-theme">🌙</div>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <h2>Hello, I'm Isabella 👩🏽‍💻</h2>
+    <h3 class="typing"></h3>
+    <p>I design and build immersive web experiences.</p>
+</section>
+
+<section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>
+        Creative web developer who is passionate about clean code, 
+        modern UI systems, and interactive digital experiences. 
+    </p>
+</section>
+
+<section id="projects" class="section">
+    <h2 class="reveal">Projects</h2>
+
+    <div class="projects-container">
+        <div class="card reveal">
+            <h3>Interactive Dashboard</h3>
+            <p>Grid-based UI with dynamic components.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Landing Page Animation</h3>
+            <p>Modern motion-based interface design.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Responsive Portfolio</h3>
+            <p>Fully adaptive layout with fluid design system.</p>
+        </div>
+    </div>
+</section>
+
+<section id="beyond" class="section reveal">
+    <h2>Beyond Code</h2>
+
+    <div class="projects-container">
+
+        <div class="card">
+            <h3>✝️ Faith & Values</h3>
+            <p>
+                 As a Christian, my faith shapes my values — integrity, discipline, 
+                consistency, and purpose. These principles guide both my personal 
+                growth and my professional approach to work.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💼 Virtual Assistance</h3>
+            <p>
+                I also work as a virtual assistant, managing tasks, organizing workflows, 
+                and supporting digital operations. This has strengthened my attention to detail, 
+                communication skills, and ability to work efficiently in structured environments.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Reading & Continuous Learning</h3>
+            <p>
+                I enjoy reading thought-provoking books that expand my perspective 
+                and deepen my understanding of people and ideas. 
+                I’m also passionate about learning new languages, 
+                which reflects my curiosity and openness to different cultures.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>✍🏽 Writing & Storytelling</h3>
+            <p>
+                Writing is one of my strongest creative outlets. 
+                I craft reflective essays, creative narratives, and structured content 
+                that communicates ideas with clarity and emotion. 
+                My love for storytelling influences how I design user experiences — 
+                every interface should tell a story.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="section reveal">
+    <h2>Contact Me</h2>
+
+    <form id="contact-form">
+        <input type="text" name="user_name" placeholder="Your Name" required>
+        <input type="email" name="user_email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Isabella. Built with passion & precision.</p>
+</footer>
+
+<script defer src="script.js"></script>
+</body>
+</html>

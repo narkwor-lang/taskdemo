@@ -1,0 +1,125 @@
+:root {
+    --primary: #00f7ff;
+    --dark-bg: #0f2027;
+    --glass: rgba(255,255,255,0.08);
+    --text-light: #ffffff;
+    --text-dark: #111;
+}
+
+body {
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364);
+    background-size:400% 400%;
+    animation: gradient 10s ease infinite;
+    color: var(--text-light);
+    transition:0.3s;
+}
+
+@keyframes gradient {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    backdrop-filter: blur(15px);
+    background: var(--glass);
+    position:fixed;
+    width:100%;
+    z-index:1000;
+}
+
+.nav-links {
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a {
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.nav-links a:hover {
+    color:var(--primary);
+}
+
+.hero {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 10%;
+}
+
+.section {
+    padding:120px 10%;
+    text-align:center;
+}
+
+.projects-container {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card {
+    background: var(--glass);
+    padding:30px;
+    border-radius:20px;
+    transition:0.4s;
+    transform-style:preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+    box-shadow:0 15px 40px rgba(0,255,255,0.3);
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:500px;
+    margin:auto;
+}
+
+input, textarea {
+    padding:12px;
+    border:none;
+    border-radius:10px;
+}
+
+.btn {
+    background:var(--primary);
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.reveal {
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s;
+}
+
+.reveal.active {
+    opacity:1;
+    transform:translateY(0);
+}
+
+footer {
+    text-align:center;
+    padding:30px;
+}
